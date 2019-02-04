@@ -13,5 +13,5 @@ c:\users\10\documents\visual studio 2017\projects\bareboneserver\bareboneserver\
 c:\users\10\documents\visual studio 2017\projects\bareboneserver\bareboneserver\main.cpp(330): warning C4018: '<': signed/unsigned mismatch
 c:\users\10\documents\visual studio 2017\projects\bareboneserver\bareboneserver\main.cpp(352): warning C4018: '<': signed/unsigned mismatch
 c:\users\10\documents\visual studio 2017\projects\bareboneserver\bareboneserver\main.cpp(343): warning C4715: 'needwhat': not all control paths return a value
-  BareBoneServer.vcxproj -> C:\Users\10\documents\visual studio 2017\Projects\BareBoneServer\Debug\BareBoneServer.exe
-  BareBoneServer.vcxproj -> C:\Users\10\documents\visual studio 2017\Projects\BareBoneServer\Debug\BareBoneServer.pdb (Partial PDB)
+  BareBoneServer.vcxproj -> C:\Users\10\Documents\Visual Studio 2017\Projects\BareBoneServer\Debug\BareBoneServer.exe
+  BareBoneServer.vcxproj -> C:\Users\10\Documents\Visual Studio 2017\Projects\BareBoneServer\Debug\BareBoneServer.pdb (Partial PDB)
