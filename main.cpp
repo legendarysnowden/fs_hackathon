@@ -5,32 +5,41 @@
 #include <cstdio>
 using namespace std;
 string needwhat(string x);
+int FindingKeyWords(string x);
 int main() {
+	
 	string wth; //line getter
 	string filename; //filename
+	
 	cout << "enter a file name: ";   //get the file address
+	
 	cin >> filename;
 	cin.get();
+	
 	system("CLS");					//clean the page
+	
 	ifstream inFile(filename.c_str(), ios::in);
+	
 	if (!inFile) {
 		cout << "file not found\n";
 		system("pause");
 		exit(1);
 	}
+	
 	bool ami = false;							//for underestanding
-
 
 	while (true) {									//for chatting with user
 		cout << "user : ";
 									
 		string flag = "";
-		string jomle;								//store our sentence
-		string definder = " ";						//declare the sentence
-		int tag = 0;								//choising an answer
+		string jomle;								//save our sentence
+													//declare the sentence
+		
+		int tag = 0;								//chossing an answer
+		
 		getline(cin, jomle);						//getting sentence
 
-		for (int i = 0; i < jomle.size(); i++) {				// analyze the sentence
+		/* for (int i = 0; i < jomle.size(); i++) {				// analyze the sentence
 			
 			if (tag == 0) {
 
@@ -120,8 +129,10 @@ int main() {
 				}
 			}
 		}
+		
 		if (tag == 0)
 			tag = 5;
+			*/
 
 		if(tag > 0)
 				switch (tag) {
@@ -399,10 +410,13 @@ int main() {
 				default:
 					break;
 			}//end of switch case
+			
 			bool ami = false;
+			
 			inFile.clear();  // clear eofbit
 			inFile.seekg(0, ios::beg);
-		}//end of while
+		
+}//end of while
 	
 	inFile.close();
 	return 0;
@@ -431,4 +445,49 @@ string needwhat(string x) {
 		return "you need a jacket\n";
 	if (number < 0)
 		return "its bone chilling , Be aware :)\n";
+}
+
+int FindingKeyWords(string sentence) {
+	string definder = "";
+	for (int i = 0; i < sentence.size(); i++) {
+		
+		if (sentence[i] != ' ') {
+			definder += sentence[i];
+
+			if()
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		} //end of if sentence != ' '
+
+		else {
+			definder = "";
+		
+		
+		}//end of else -> if sentence != ' '
+		
+
+
+
+
+	
+	
+	
+	}//end of for
+
+
+
+
+
 }
