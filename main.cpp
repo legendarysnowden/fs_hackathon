@@ -8,9 +8,6 @@ string needwhat(string x);
 int main() {
 	string wth; //line getter
 	string filename; //filename
-
-	
-
 	cout << "enter a file name: ";   //get the file address
 	cin >> filename;
 	cin.get();
@@ -126,12 +123,6 @@ int main() {
 		if (tag == 0)
 			tag = 5;
 
-		/*
-		system("CLS");
-		*/
-		
-		
-		
 		if(tag > 0)
 				switch (tag) {
 					/*****************************************************************************/
@@ -405,11 +396,9 @@ int main() {
 					break;
 
 					/************************************************************/
-
 				default:
 					break;
 			}//end of switch case
-
 			bool ami = false;
 			inFile.clear();  // clear eofbit
 			inFile.seekg(0, ios::beg);
